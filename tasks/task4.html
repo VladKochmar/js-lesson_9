@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Завдання 4</title>
+</head>
+
+<body>
+   <main class="page">
+      <section class="block">
+         <div class="block__container">
+            <h1 class="block__title">Обов'язкове завдання 4</h1>
+            <div class="block__body">
+               <a href="../index.html" class="block__link">Повернутися до index.html</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script>
+      const arr = [27, 101, 32, 84, 324, 756, 100, 57]
+
+      const arrBiggerThan100 = []
+
+      // За завданням
+      for (let elem of arr) {
+         if (elem > 100) arrBiggerThan100.push(elem)
+      }
+
+      // Ще один варіант
+      // const arrBiggerThan100 = arr.filter(elem => elem > 100)
+
+      document.write(`
+         <div class="text">Початковий масив: ${arr}</div>
+         <div class="text">Отриманний масив: ${arrBiggerThan100}</div>
+      `)
+   </script>
+</body>
+
+</html>
